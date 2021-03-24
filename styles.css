@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    margin-top: 20px;
+    text-align: center;
+}
+.parrafo-descripcion {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.parrafo-descripcion p {
+    font-size: 20px;
+}
+.personal {
+    width: 100%;
+    height: 150px;
+}
+.personal h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+.personal-list {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 300px;
+}
+.personal-list ul {
+    font-size: 20px;
+}
+
+.secciones-ayuda {
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+}
+.secciones-ayuda h2 {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.container-ayuda-gatos, .container-ayuda-perros {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.animal-main {
+    width: 200px;
+    height: 200px;
+    margin-left: 300px;
+}
+.animal-main img {
+    width: 100%;
+    height: 100%;
+}
+.container-ayuda-gatos a, .container-ayuda-perros a {
+    margin-left: 10%;
+    font-size: 20px;
+}
+footer {
+    width: 100%;
+    height: 100px;
+}
+
