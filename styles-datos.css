@@ -1,0 +1,21 @@
+header a {
+    display: flex;
+    justify-content: flex-end;
+}
+.container-gato {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center ;
+}
+
+.container-gato figure {
+    width: 400px;
+    height: 240px;
+    min-width: 500px;
+    border: 2px solid black;
+}
+.container-gato figure img {
+    width: 100%;
+    height: 100%;
+}
