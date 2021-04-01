@@ -5,67 +5,129 @@
     font-family: Arial, Helvetica, sans-serif;
     /* background-color: black; */
 }
-h1 {
-    margin-top: 20px;
-    text-align: center;
+html {
+    background: linear-gradient(207.8deg, #EEF1F3 16.69%, #189FD6 100%);
+}
+.menu-colores {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    margin-left: 10px;
+    position: absolute;
+}
+.menu-colores:hover {
+    font-size: 20px;
 }
 .parrafo-descripcion {
     margin-left: 200px;
     margin-right: 200px;
     margin-top: 50px;
+    padding: 30px;
+    background-color: #5BC7F2;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+}
+.parrafo-descripcion h1 {
+    margin-bottom: 40px;
+    font-size: 40px;   
+    text-align: center;
+    display: flex;
 }
 .parrafo-descripcion p {
     font-size: 20px;
 }
 
 .personal {
-    width: 100%;
-    height: 150px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #5BC7F2;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    display: flex;
+    width: 86%;
+    flex-direction: column;
 }
 .personal h2 {
     text-align: center;
     margin-top: 50px;
 }
+
 .personal-list {
     display: flex;
-    justify-content: center;
-    margin-top: 50px;
+    margin-top: 20px;
+    justify-content: flex-start;
 }
 .personal-list ul {
     font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-bottom: 70px;
 }
-
+.personal-list ul li {
+    line-height: 60px;
+}
 .secciones-ayuda {
-    margin-top: 100px;
-    width: 100%;
-    height: 500px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    height: auto;
+    width: 86%;
+    background-color: #5BC7F2;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+    border-radius: 5px;
 }
 .secciones-ayuda h2 {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin-bottom: 100px;
 }
-.container-ayuda-gatos, .container-ayuda-perros {
-    height: 200px;
-    width: 100%;
-    display: flex;
-    align-items: center;
+/* .container-ayuda-gatos, .container-ayuda-perros {
+    border: 1px solid red;
+    height: auto;
+    width: 40vw;
+    display: inline-block;
     margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+} */
+.cartas-animales {
+    display: flex;
+    justify-content: space-around;
 }
-.animal-main {
+.vinculo {
     width: 200px;
     height: 200px;
-    margin-left: 300px;
+    display: flex;
 }
-.animal-main img {
-    width: 100%;
-    height: 100%;
+.vinculo img {
+    width:  200px;
+    height: 200px;
+    border: 1px groove black;
+    border-radius: 5px;
+    background-color: #21BFFF;
 }
-.container-ayuda-gatos a, .container-ayuda-perros a {
+.vinculo img:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    background-color: #86DCFF ;
+    display: inline;
+
+}
+/* .container-ayuda-gatos a, .container-ayuda-perros a {
     margin-left: 10%;
+    position: absolute;
     font-size: 20px;
-}
+    display: flex;
+} */
+
 footer {
     width: 100%;
     height: 100px;
