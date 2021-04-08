@@ -1,4 +1,6 @@
-
+.card {
+  height: 65vh;
+}
 .logo img {
     margin-right: 20px;
     width: 50px;
@@ -9,6 +11,13 @@
 .card img {
     width: 100%;
     height: 100%;
+}
+#footer a {
+  color: black;
+  text-decoration: none;
+}
+#footer a:hover {
+  text-decoration: black underline;
 }
 /* Preguntar al profe, como hacer para que todas las fotos utilicen el mismo espaco
 sin desarmarse */
