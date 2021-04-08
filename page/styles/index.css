@@ -4,7 +4,7 @@
   height:50px;
 }
 #main .carousel-inner img {
-  max-height: 70vh;
+  max-height: 90vh;
   object-fit: cover;
   filter: grayscale(70%);
 }
