@@ -33,11 +33,27 @@
 .container-form {
   width: 50%;
 }
-
+.info-clima {
+  display: flex;
+}
+.container-icon-clima {
+  width: 100px;
+  height: 100px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.container-icon-clima img {
+  width: 100%;
+  height: 100%;
+}
+.resultado-clima {
+  margin-left: 100px;
+}
 .container-foto-clima {
   width: 400px;
   height: 200px;
 }
+
 .container-foto-clima img {
   width: 100%;
   height: 100%;
