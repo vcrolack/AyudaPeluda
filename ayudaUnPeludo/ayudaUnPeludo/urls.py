@@ -24,4 +24,10 @@ urlpatterns = [
     path('comoAdoptar/', include('core.urls')),
     path('donativos/', include('core.urls')),
     path('perroBolt/', include('core.urls')),
+    path('perroCachulo/', include('core.urls')),
+    path('perroFlaca/', include('core.urls')),
+    path('perroIvo/', include('core.urls')),
+    path('perroMagnus/', include('core.urls')),
+    path('perroNina/', include('core.urls')),
+    path('perroRudolf/', include('core.urls')),
 ]

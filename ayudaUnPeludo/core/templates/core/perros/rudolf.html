@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/styleDatos.css' %}">
+    {% load static %}
+    <link  rel="icon"   href="{% static 'core/img/huella.svg' %}" type="imge/svg" />
+    <title>Adopta a Cachulo</title>
+  </head>
+  <body>
+    <header>
+      <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex logo" href="#">
+            {% load static %}
+            <img src="{% static 'core/img/huella.svg' %}" alt=""> 
+            ADOPTA UN<br>PELUDO
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav  ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li><a class="nav-link active" aria-current="page" href="#">Donativos</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdopciones" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Adopciones
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="../comoAdoptar.html">¿Cómo adoptar?</a></li>
+                  <li><a class="dropdown-item" href="../adopcionGatos.html">Gatos en adopción<br>- Anfitriones y Santuario</a></li>
+                  <li><a class="dropdown-item" href="../adopcionPerros.html">Perros en adopción<br>- Anfitriones y Santuario</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdopciones" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Voluntariado
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="">Hogar temporal</a></li>
+                <li><a class="dropdown-item" href="">Amadrina/Apadrina <br>una criatura</a></li>
+                <li><a class="dropdown-item" href="">Socios</a></li>
+              </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+
+    
+    <section class="datos-mascota">
+      <a class="btn btn-secondary btn_volver" href="../adopcionPerros.html" role="button">Volver atrás</a>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 container-fluid">
+            <div class="card mb-12 container-fluid tarjeta">
+              <div class="row g-0">
+                <div class="col-md-4 mascota">
+                  {% load static %}
+                  <img src="{% static 'core/img/perros/Rudolf.jpg' %}"  alt="..." >
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body"> 
+                    <h3 class="card-title d-flex flex-column align-items-center container-datos">Hola! Soy Rudolf</h3>
+                    <p class="card-text text-center">Este es Rudolf, tiene 5 años, este perrito llego a nuestras sede para el día de navidad, de por si no tenía un hogar y ahora está a la espera de alguien que lo quiera, es muy tierno y amoroso.</p>
+                    <div class="container mt-5 d-flex justify-content-center">
+                      <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6">
+                          <h4>Bio</h4>
+                          <p> <b>Sexo: </b> Masculino</p>
+                          <p> <b>Raza:</b> champiñon</p>
+                          <p> <b>Edad:</b> 4 meses</p>
+                          <p> <b>Tamaño:</b> S</p>
+                        </div>
+                        <div class="col-6">
+                            <h4>Más información</h4>
+                            <p> <b>Se adapta a departamento:</b> Sí</p>
+                            <p> <b>Convive con niños:</b> No</p>
+                            <p> <b>Convive con perros:</b> No</p>
+                            <p> <b>Convive con gatos:</b> No</p>
+                            <p> <b>Nivel de energía:</b> Alto</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="py-4 bg-light">
+      <div class="container">
+        <div class="row text center">
+          <div class="col-12 col-lg">
+            <a href="../index.html">Fundación adopta</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="../comoAdoptar.html">Contáctanos</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="../comoAdoptar.html">Postula!</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="">Términos y condiciones</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

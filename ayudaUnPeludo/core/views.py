@@ -120,3 +120,24 @@ def donativos(request):
 
 def perroBolt(request):
   return render(request, 'core/perros/bolt.html')
+
+def perroCachulo(request):
+  return render(request, 'core/perros/cachulo.html')
+
+def perroFlaca(request):
+  return render(request, 'core/perros/flaca.html')
+
+def perroIvo(request):
+  return render(request, 'core/perros/ivo.html')
+
+def perroMagnus(request):
+  return render(request, 'core/perros/magnus.html')
+
+def perroNina(request):
+  return render(request, 'core/perros/nina.html')
+
+def perroRudolf(request):
+  return render(request, 'core/perros/rudolf.html')
+
+def perroThor(request):
+  return render(request, 'core/perros/thor.html')
