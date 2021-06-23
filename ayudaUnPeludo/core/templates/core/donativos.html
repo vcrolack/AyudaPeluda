@@ -83,7 +83,7 @@
   <header>
     <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand d-flex logo" href="#">
+        <a class="navbar-brand d-flex logo" href="{% url 'home' %}">
           {% load static %}
           <img src="{% static 'core/img/huella.svg' %}" alt=""> 
           ADOPTA UN<br>PELUDO
@@ -94,7 +94,7 @@
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
           <ul class="navbar-nav  ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Inicio</a>
             </li>
             <li><a class="nav-link active" aria-current="page" href="#">Donativos</a></li>
             <li class="nav-item dropdown">
@@ -102,9 +102,9 @@
                 Adopciones
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="./comoAdoptar.html">¿Cómo adoptar?</a></li>
-                <li><a class="dropdown-item" href="./adopcionGatos.html">Gatos en adopción<br>- Anfitriones y Santuario</a></li>
-                <li><a class="dropdown-item" href="./adopcionPerros.html">Perros en adopción<br>- Anfitriones y Santuario</a></li>
+                <li><a class="dropdown-item" href="{% url 'comoAdoptar' %}">¿Cómo adoptar?</a></li>
+                <li><a class="dropdown-item" href="{% url 'adopcionGatos' %}">Gatos en adopción<br>- Anfitriones y Santuario</a></li>
+                <li><a class="dropdown-item" href="{% url 'adopcionPerros' %}">Perros en adopción<br>- Anfitriones y Santuario</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -202,10 +202,10 @@
           <a href="#">Fundación adopta</a>
         </div>
         <div class="col-12 col-lg">
-          <a href="./comoAdoptar.html">Contáctanos</a>
+          <a href="{% url 'comoAdoptar' %}">Contáctanos</a>
         </div>
         <div class="col-12 col-lg">
-          <a href="./comoAdoptar.html">Postula!</a>
+          <a href="{% url 'comoAdoptar' %}">Postula!</a>
         </div>
         <div class="col-12 col-lg">
           <a href="#">Términos y condiciones</a>

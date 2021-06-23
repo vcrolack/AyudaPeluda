@@ -74,8 +74,8 @@ def adopcionPerros(request):
     },
     {
       "id": 3,
-      "nombre": "Niña",
-      "biografia": "Esta es Niña, tiene 6 años de edad, es muy Temperamental y territorial, Le gusta bastante dormir. Posee gusto para todas las comidas.",
+      "nombre": "Nina",
+      "biografia": "Esta es Nina, tiene 6 años de edad, es muy Temperamental y territorial, Le gusta bastante dormir. Posee gusto para todas las comidas.",
       "fotografia": "Nina.jpg",
     },
     {

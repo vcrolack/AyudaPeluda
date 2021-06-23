@@ -93,7 +93,7 @@
     <header>
       <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand d-flex logo" href="./index.html">
+          <a class="navbar-brand d-flex logo" href="{% url 'home' %}">
             {% load static %}
             <img src="{% static 'core/img/huella.svg' %}" alt=""> 
             ADOPTA UN<br>PELUDO
@@ -104,17 +104,17 @@
           <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav  ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Inicio</a>
               </li>
-              <li><a class="nav-link active" aria-current="page" href="#">Donativos</a></li>
+              <li><a class="nav-link active" aria-current="page" href="{% url 'donativos' %}">Donativos</a></li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdopciones" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Adopciones
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">¿Cómo adoptar?</a></li>
-                  <li><a class="dropdown-item" href="./adopcionGatos.html">Gatos en adopción<br>- Anfitriones y Santuario</a></li>
-                  <li><a class="dropdown-item" href="./adopcionPerros.html">Perros en adopción<br>- Anfitriones y Santuario</a></li>
+                  <li><a class="dropdown-item" href="{% url 'comoAdoptar' %}">¿Cómo adoptar?</a></li>
+                  <li><a class="dropdown-item" href="{% url 'adopcionGatos' %}l">Gatos en adopción<br>- Anfitriones y Santuario</a></li>
+                  <li><a class="dropdown-item" href="{% url 'adopcionPerros' %}">Perros en adopción<br>- Anfitriones y Santuario</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -218,7 +218,7 @@
       <div class="container">
         <div class="row text center">
           <div class="col-12 col-lg">
-            <a href="./index.html">Fundación adopta</a>
+            <a href="{% url 'home' %}">Fundación adopta</a>
           </div>
           <div class="col-12 col-lg">
             <a href="#">Contáctanos</a>
